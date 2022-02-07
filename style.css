@@ -45,6 +45,8 @@
     background-size: contain;
     background-repeat: no-repeat;  
     transition: 0.3s;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
   }
   
   .logo:hover {
@@ -99,7 +101,6 @@
   .play {
     width: 160px;
     height: 160px;
-    background-image: url("./assets/svg/play.svg");
     background-size: contain;
     background-color: transparent;
     border: 0;  
@@ -107,24 +108,28 @@
     
   }
   
-  .play:focus {
+  /*.play:focus {
     border: 0;
-  }
+  }*/
   
   .play:hover {
     filter: brightness(.85);
   }
+ 
 
-  .play:active {
+  button {
     width: 160px;
     height: 160px;
-    background-image: url("./assets/svg/pause.svg");
+    border-radius: 5px;
+    background-image: url("./assets/svg/play.svg");
     background-size: contain;
-    background-color: transparent;
-    border: 0;  
-    transition: .3s;
   }
-
+  
+  .pause {  
+    background-image: url("./assets/svg/pause.svg");
+  }
+  
+  
   .footer {  
     background-color: #000;
   }
